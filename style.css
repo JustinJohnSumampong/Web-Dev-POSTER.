@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    overflow: hidden;
+}
+.poster {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #000000, #1a1a1a, #2e2e2e, #c0c0c0);
+    background-size: 400% 400%;
+    animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(192, 192, 192, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+
+    box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
+}
+.title {
+    color: #c0c0c0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.quote {
+    font-size: 55px;
+    color: #fff;
+    margin: 5px 0;
+    font-weight: 900;
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.highlight {
+    color: #c0c0c0;
+    text-shadow: 0 0 15px rgba(192,192,192,0.6);
+}
+.author {
+    margin-top: 25px;
+    color: #aaa;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
