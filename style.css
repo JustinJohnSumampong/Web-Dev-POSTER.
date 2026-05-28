@@ -1,58 +1,207 @@
-body {
+* {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #000;
-    overflow: hidden;
-}
-.poster {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: linear-gradient(135deg, #000000, #1a1a1a, #2e2e2e, #c0c0c0);
-    background-size: 400% 400%;
-    animation: bgMove 12s ease infinite;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes bgMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, rgb(111, 133, 182), rgb(58, 71, 129));
+    color: black;
 }
+
+.text234 {
+    color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+     padding: 40px 20px;
+    background: rgb(45, 87, 129);
+    
+   
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+#justin 
+{
+   font-weight: 700;
+   font-size:  20px;
+
+}
+
+.profile-container {
+    margin-top: 15px;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+
+}
+
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 7px;
+    background-color: rgb(45, 29, 119);
+    display: block;
+    color: black;
+   
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+     
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.skills {
+    text-align: center;
+}
+
+.skills li {
+    display: inline-block;
+    background: rgba(1, 13, 19, 0.15);
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    background: white;
+    color: #000000;
+}
+
+
 .card {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(192, 192, 192, 0.2);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-    padding: 40px 60px;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #ffffff;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+   
+}
+
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #000000;
+    width: 100px;
+}
+
+button {
+    padding: 35px;
+    background: rgb(255, 255, 255);
+    color: #020617;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(156, 157, 230);
+}
+
+#button {
+     color: rgb(0, 0, 0);
+     font-family: 'Times New Roman', Times, serif;
+     
+}
+
+footer {
     text-align: center;
-
-    box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
-}
-.title {
-    color: #c0c0c0;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.quote {
-    font-size: 55px;
-    color: #fff;
-    margin: 5px 0;
-    font-weight: 900;
-    letter-spacing: 4px;
-
-    text-shadow: 0 0 10px rgba(255,255,255,0.2);
-}
-.highlight {
-    color: #c0c0c0;
-    text-shadow: 0 0 15px rgba(192,192,192,0.6);
-}
-.author {
-    margin-top: 25px;
-    color: #aaa;
-    font-size: 16px;
-    letter-spacing: 2px;
+    padding: 20px;
+    margin-top: 30px;
+    background: rgba(15, 23, 42, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
 }
